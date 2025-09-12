@@ -1,5 +1,5 @@
 // Export all interfaces
-export * from '@/interfaces/index.js';
+export * from './interfaces/index';
 // Export all enums
-export * from '@/enums/index.js';
+export * from './enums/index';
 //# sourceMappingURL=index.js.map

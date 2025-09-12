@@ -1,19 +1,19 @@
 // Export all enum modules
-export * from './layout.js';
-export * from './permission.js';
-export * from './theme.enum.js';
+export * from './layout';
+export * from './permission';
+export * from './theme.enum';
 
 // Export bffweb enums
-export * from './bffweb/lesson.enum.js';
+export * from './bffweb/lesson.enum';
 
 // Export order enums
-export * from './order/order.enum.js';
+export * from './order/order.enum';
 
 // Export user enums
-export * from './user/auth.enum.js';
+export * from './user/auth.enum';
 
 // Export wallet enums
-export * from './wallet/bankaccount.enum.js';
-export * from './wallet/transaction.enum.js';
-export * from './wallet/wallet.enum.js';
+export * from './wallet/bankaccount.enum';
+export * from './wallet/transaction.enum';
+export * from './wallet/wallet.enum';
 
