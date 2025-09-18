@@ -18,6 +18,10 @@
       "import": "./dist/interfaces/authen.js",
       "types": "./dist/interfaces/authen.d.ts"
     },
+    "./interfaces/bffweb": {
+      "import": "./dist/interfaces/bffweb/index.js",
+      "types": "./dist/interfaces/bffweb/index.d.ts"
+    },
     "./interfaces/bffweb/exam.interface": {
       "import": "./dist/interfaces/bffweb/exam.interface.js",
       "types": "./dist/interfaces/bffweb/exam.interface.d.ts"
@@ -50,6 +54,10 @@
       "import": "./dist/interfaces/mnpResponse.interface.js",
       "types": "./dist/interfaces/mnpResponse.interface.d.ts"
     },
+    "./interfaces/order": {
+      "import": "./dist/interfaces/order/index.js",
+      "types": "./dist/interfaces/order/index.d.ts"
+    },
     "./interfaces/order/order.interface": {
       "import": "./dist/interfaces/order/order.interface.js",
       "types": "./dist/interfaces/order/order.interface.d.ts"
@@ -57,6 +65,10 @@
     "./interfaces/order/product.interface": {
       "import": "./dist/interfaces/order/product.interface.js",
       "types": "./dist/interfaces/order/product.interface.d.ts"
+    },
+    "./interfaces/user": {
+      "import": "./dist/interfaces/user/index.js",
+      "types": "./dist/interfaces/user/index.d.ts"
     },
     "./interfaces/user/auth.interface": {
       "import": "./dist/interfaces/user/auth.interface.js",
@@ -69,6 +81,10 @@
     "./interfaces/user/user.interface": {
       "import": "./dist/interfaces/user/user.interface.js",
       "types": "./dist/interfaces/user/user.interface.d.ts"
+    },
+    "./interfaces/wallet": {
+      "import": "./dist/interfaces/wallet/index.js",
+      "types": "./dist/interfaces/wallet/index.d.ts"
     },
     "./interfaces/wallet/bankaccount.interface": {
       "import": "./dist/interfaces/wallet/bankaccount.interface.js",

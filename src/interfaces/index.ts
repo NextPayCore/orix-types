@@ -5,19 +5,16 @@ export interface Response<T> {
   data: T;
 }
 
-// // Export all interface modules
-// export * from './authen';
-// export * from './constantEnum.interface';
-// export * from './file.interface';
-// export * from './menu';
-// export * from './mnpResponse.interface';
+// Export direct interface files
+export * from './authen';
+export * from './constantEnum.interface';
+export * from './file.interface';
+export * from './menu';
+export * from './mnpResponse.interface';
 
-// Export order interfaces
-
-// Export user interfaces
-
-// Export bffweb interfaces
-// export * from './bffweb/';
-
-// Export wallet interfaces
+// Export subdirectory interfaces
+export * from './order';
+export * from './user';
+export * from './bffweb';
+export * from './wallet';
 
