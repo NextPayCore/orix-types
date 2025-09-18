@@ -1,5 +1,5 @@
+// Export wallet interfaces
 export * from './bankaccount.interface';
 export * from './revenue.interface';
 export * from './transaction.interface';
 export * from './wallet.interface';
-
