@@ -201,7 +201,7 @@
     "build-types": "tsc",
     "dev-types": "tsc --watch",
     "clean": "rimraf dist",
-    "prepare": "pnpm run clean && pnpm run build-types",
+    "prepare": "pnpm run clean && pnpm run build-all",
     "typecheck": "tsc --noEmit",
     "generate-exports": "node scripts/generate-exports.cjs",
     "build-all": "pnpm run generate-exports && pnpm run build-types",
