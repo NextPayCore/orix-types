@@ -79,7 +79,7 @@
     "build-types": "tsc",
     "dev-types": "tsc --watch",
     "clean": "rimraf dist",
-    "prepare": "pnpm run clean && pnpm run build-types",
+    "prepare": "pnpm run clean && pnpm run build-all",
     "typecheck": "tsc --noEmit",
     "release:patch": "pnpm version patch && git push && git push --tags",
     "release:minor": "pnpm version minor && git push && git push --tags",
