@@ -9,6 +9,46 @@
     ".": {
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
+    },
+    "./interfaces": {
+      "import": "./dist/interfaces/index.js",
+      "types": "./dist/interfaces/index.d.ts"
+    },
+    "./enums": {
+      "import": "./dist/enums/index.js", 
+      "types": "./dist/enums/index.d.ts"
+    },
+    "./interfaces/auth": {
+      "import": "./dist/interfaces/user/index.js",
+      "types": "./dist/interfaces/user/index.d.ts"
+    },
+    "./interfaces/order": {
+      "import": "./dist/interfaces/order/index.js",
+      "types": "./dist/interfaces/order/index.d.ts"
+    },
+    "./interfaces/wallet": {
+      "import": "./dist/interfaces/wallet/index.js",
+      "types": "./dist/interfaces/wallet/index.d.ts"
+    },
+    "./interfaces/bffweb": {
+      "import": "./dist/interfaces/bffweb/index.js",
+      "types": "./dist/interfaces/bffweb/index.d.ts"
+    },
+    "./enums/auth": {
+      "import": "./dist/enums/user/index.js",
+      "types": "./dist/enums/user/index.d.ts"
+    },
+    "./enums/order": {
+      "import": "./dist/enums/order/index.js",
+      "types": "./dist/enums/order/index.d.ts"
+    },
+    "./enums/wallet": {
+      "import": "./dist/enums/wallet/index.js",
+      "types": "./dist/enums/wallet/index.d.ts"
+    },
+    "./enums/bffweb": {
+      "import": "./dist/enums/bffweb/index.js",
+      "types": "./dist/enums/bffweb/index.d.ts"
     }
   },
   "files": [
@@ -52,6 +92,7 @@
     "vite": "^7.1.2"
   },
   "dependencies": {
-    "axios": "^1.12.2"
+    "axios": "^1.12.2",
+    "dayjs": "^1.11.18"
   }
 }
