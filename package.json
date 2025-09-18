@@ -14,60 +14,166 @@
       "import": "./dist/interfaces/index.js",
       "types": "./dist/interfaces/index.d.ts"
     },
+    "./interfaces/authen": {
+      "import": "./dist/interfaces/authen.js",
+      "types": "./dist/interfaces/authen.d.ts"
+    },
+    "./interfaces/bffweb/exam.interface": {
+      "import": "./dist/interfaces/bffweb/exam.interface.js",
+      "types": "./dist/interfaces/bffweb/exam.interface.d.ts"
+    },
+    "./interfaces/bffweb/lesson.interface": {
+      "import": "./dist/interfaces/bffweb/lesson.interface.js",
+      "types": "./dist/interfaces/bffweb/lesson.interface.d.ts"
+    },
+    "./interfaces/bffweb/response.interface": {
+      "import": "./dist/interfaces/bffweb/response.interface.js",
+      "types": "./dist/interfaces/bffweb/response.interface.d.ts"
+    },
+    "./interfaces/bffweb/short-link.interface": {
+      "import": "./dist/interfaces/bffweb/short-link.interface.js",
+      "types": "./dist/interfaces/bffweb/short-link.interface.d.ts"
+    },
+    "./interfaces/constantEnum.interface": {
+      "import": "./dist/interfaces/constantEnum.interface.js",
+      "types": "./dist/interfaces/constantEnum.interface.d.ts"
+    },
+    "./interfaces/file.interface": {
+      "import": "./dist/interfaces/file.interface.js",
+      "types": "./dist/interfaces/file.interface.d.ts"
+    },
+    "./interfaces/menu": {
+      "import": "./dist/interfaces/menu.js",
+      "types": "./dist/interfaces/menu.d.ts"
+    },
+    "./interfaces/mnpResponse.interface": {
+      "import": "./dist/interfaces/mnpResponse.interface.js",
+      "types": "./dist/interfaces/mnpResponse.interface.d.ts"
+    },
+    "./interfaces/order/order.interface": {
+      "import": "./dist/interfaces/order/order.interface.js",
+      "types": "./dist/interfaces/order/order.interface.d.ts"
+    },
+    "./interfaces/order/product.interface": {
+      "import": "./dist/interfaces/order/product.interface.js",
+      "types": "./dist/interfaces/order/product.interface.d.ts"
+    },
+    "./interfaces/user/auth.interface": {
+      "import": "./dist/interfaces/user/auth.interface.js",
+      "types": "./dist/interfaces/user/auth.interface.d.ts"
+    },
+    "./interfaces/user/otp.interface": {
+      "import": "./dist/interfaces/user/otp.interface.js",
+      "types": "./dist/interfaces/user/otp.interface.d.ts"
+    },
+    "./interfaces/user/user.interface": {
+      "import": "./dist/interfaces/user/user.interface.js",
+      "types": "./dist/interfaces/user/user.interface.d.ts"
+    },
+    "./interfaces/wallet/bankaccount.interface": {
+      "import": "./dist/interfaces/wallet/bankaccount.interface.js",
+      "types": "./dist/interfaces/wallet/bankaccount.interface.d.ts"
+    },
+    "./interfaces/wallet/revenue.interface": {
+      "import": "./dist/interfaces/wallet/revenue.interface.js",
+      "types": "./dist/interfaces/wallet/revenue.interface.d.ts"
+    },
+    "./interfaces/wallet/transaction.interface": {
+      "import": "./dist/interfaces/wallet/transaction.interface.js",
+      "types": "./dist/interfaces/wallet/transaction.interface.d.ts"
+    },
+    "./interfaces/wallet/wallet.interface": {
+      "import": "./dist/interfaces/wallet/wallet.interface.js",
+      "types": "./dist/interfaces/wallet/wallet.interface.d.ts"
+    },
     "./enums": {
-      "import": "./dist/enums/index.js", 
+      "import": "./dist/enums/index.js",
       "types": "./dist/enums/index.d.ts"
     },
-    "./interfaces/auth": {
-      "import": "./dist/interfaces/user/index.js",
-      "types": "./dist/interfaces/user/index.d.ts"
+    "./enums/bffweb/lesson.enum": {
+      "import": "./dist/enums/bffweb/lesson.enum.js",
+      "types": "./dist/enums/bffweb/lesson.enum.d.ts"
     },
-    "./interfaces/order": {
-      "import": "./dist/interfaces/order/index.js",
-      "types": "./dist/interfaces/order/index.d.ts"
+    "./enums/layout": {
+      "import": "./dist/enums/layout.js",
+      "types": "./dist/enums/layout.d.ts"
     },
-    "./interfaces/wallet": {
-      "import": "./dist/interfaces/wallet/index.js",
-      "types": "./dist/interfaces/wallet/index.d.ts"
+    "./enums/order/order.enum": {
+      "import": "./dist/enums/order/order.enum.js",
+      "types": "./dist/enums/order/order.enum.d.ts"
     },
-    "./interfaces/bffweb": {
-      "import": "./dist/interfaces/bffweb/index.js",
-      "types": "./dist/interfaces/bffweb/index.d.ts"
+    "./enums/permission": {
+      "import": "./dist/enums/permission.js",
+      "types": "./dist/enums/permission.d.ts"
     },
-    "./enums/auth": {
+    "./enums/theme.enum": {
+      "import": "./dist/enums/theme.enum.js",
+      "types": "./dist/enums/theme.enum.d.ts"
+    },
+    "./enums/user": {
       "import": "./dist/enums/user/index.js",
       "types": "./dist/enums/user/index.d.ts"
     },
-    "./enums/order": {
-      "import": "./dist/enums/order/index.js",
-      "types": "./dist/enums/order/index.d.ts"
+    "./enums/user/auth.enum": {
+      "import": "./dist/enums/user/auth.enum.js",
+      "types": "./dist/enums/user/auth.enum.d.ts"
     },
     "./enums/wallet": {
       "import": "./dist/enums/wallet/index.js",
       "types": "./dist/enums/wallet/index.d.ts"
     },
-    "./enums/bffweb": {
-      "import": "./dist/enums/bffweb/index.js",
-      "types": "./dist/enums/bffweb/index.d.ts"
+    "./enums/wallet/bankaccount.enum": {
+      "import": "./dist/enums/wallet/bankaccount.enum.js",
+      "types": "./dist/enums/wallet/bankaccount.enum.d.ts"
+    },
+    "./enums/wallet/transaction.enum": {
+      "import": "./dist/enums/wallet/transaction.enum.js",
+      "types": "./dist/enums/wallet/transaction.enum.d.ts"
+    },
+    "./enums/wallet/wallet.enum": {
+      "import": "./dist/enums/wallet/wallet.enum.js",
+      "types": "./dist/enums/wallet/wallet.enum.d.ts"
     },
     "./constants": {
       "import": "./dist/constants/index.js",
       "types": "./dist/constants/index.d.ts"
     },
-    "./constants/order": {
+    "./constants/config": {
+      "import": "./dist/constants/config.js",
+      "types": "./dist/constants/config.d.ts"
+    },
+    "./constants/localStorageKey": {
+      "import": "./dist/constants/localStorageKey.js",
+      "types": "./dist/constants/localStorageKey.d.ts"
+    },
+    "./constants/menu": {
+      "import": "./dist/constants/menu.js",
+      "types": "./dist/constants/menu.d.ts"
+    },
+    "./constants/order/order.constant": {
       "import": "./dist/constants/order/order.constant.js",
       "types": "./dist/constants/order/order.constant.d.ts"
     },
-    "./constants/wallet": {
+    "./constants/wallet/transaction.constant": {
       "import": "./dist/constants/wallet/transaction.constant.js",
       "types": "./dist/constants/wallet/transaction.constant.d.ts"
     },
     "./utils": {
       "import": "./dist/utils/index.js",
       "types": "./dist/utils/index.d.ts"
+    },
+    "./utils/date": {
+      "import": "./dist/utils/date.js",
+      "types": "./dist/utils/date.d.ts"
+    },
+    "./utils/format": {
+      "import": "./dist/utils/format.js",
+      "types": "./dist/utils/format.d.ts"
+    },
+    "./utils/paser": {
+      "import": "./dist/utils/paser.js",
+      "types": "./dist/utils/paser.d.ts"
     }
-
-    
   },
   "files": [
     "dist"
@@ -81,12 +187,13 @@
     "clean": "rimraf dist",
     "prepare": "pnpm run clean && pnpm run build-types",
     "typecheck": "tsc --noEmit",
+    "generate-exports": "node scripts/generate-exports.cjs",
+    "build-all": "pnpm run generate-exports && pnpm run build-types",
     "release:patch": "pnpm version patch && git push && git push --tags",
     "release:minor": "pnpm version minor && git push && git push --tags",
     "release:major": "pnpm version major && git push && git push --tags",
-    "version": "pnpm run build-types && git add dist/",
-    "publish:git": "git add . && git commit -m \"update types\" && git push origin main"
-    
+    "version": "pnpm run build-all && git add dist/",
+    "publish:git": "pnpm run build-all && git add . && git commit -m \"update types\" && git push origin main"
   },
   "keywords": [
     "typescript",

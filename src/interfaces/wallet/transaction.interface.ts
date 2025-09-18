@@ -38,10 +38,9 @@ export interface IBankAccountInfo {
   bankName: string;
   bankCode: string;
 }
-export interface ITransactionListReq {
-  // transactionType?: TransactionType[];
-  transactionType?: TransactionTypeReq[];
 
+export interface ITransactionListReq {
+  transactionType?: TransactionTypeReq[];
   pagination: {
     page: number;
     size: number;
@@ -50,7 +49,6 @@ export interface ITransactionListReq {
 
 export interface ICreateWithdrawalReq {
   amount: number;
-  // accountNumber: string;
   bankAccountId: number;
   reason: string;
 }
