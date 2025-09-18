@@ -1,11 +1,4 @@
-// Define axios response type locally to avoid external dependency
-export interface AxiosResponse<T = unknown> {
-  data: T;
-  status: number;
-  statusText: string;
-  headers: unknown;
-  config: unknown;
-}
+import type { AxiosResponse } from 'axios';
 
 export interface Response<T> {
   success: boolean;

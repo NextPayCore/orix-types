@@ -1,4 +1,4 @@
-import type { TransactionStatus, TransactionType, TransactionTypeReq } from '@/enums/wallet/transaction.enum.js';
+import type { TransactionStatus, TransactionType, TransactionTypeReq } from '@/enums/wallet/transaction.enum';
 
 export interface ITransaction {
   id: number;
@@ -20,7 +20,7 @@ export interface ITransaction {
   withdrawalCompletedAt?: string;
   note?: string;
   conditions?: string;
-  type: TransactionType.WITHDRAWAL | TransactionType.COMMISSION;
+  type: TransactionTypeReq;
   status: TransactionStatus;
   bankAccountInfo?: IBankAccountInfo;
   statusMessage?: string;
@@ -28,6 +28,8 @@ export interface ITransaction {
   feeWithdrawal?: number;
   personalIncomeTaxRate?: number;
   source?: string;
+  orderCode?: string;
+  orderId?: string;
 }
 
 export interface IBankAccountInfo {

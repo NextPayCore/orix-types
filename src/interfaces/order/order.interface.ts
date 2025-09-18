@@ -5,7 +5,7 @@ import type {
   OrderStatus,
   PaymentMethod,
   TypeOrder
-} from '@/enums/order/order.enum.js';
+} from '@/enums/order/order.enum';
 
 export interface IOrderCreateFast {
   productId: number;
@@ -74,6 +74,7 @@ export interface IOrderRequest {
 }
 
 export interface IOrderItem {
+  createAt: string;
   orderId: number;
   orderNo: string;
   orderStatus: OrderStatus;
@@ -152,83 +153,4 @@ export interface IUserResponse {
 export interface ITimelineItem {
   title: string;
   time: string;
-}
-export interface IOrder {
-  id: number
-  orderNo: string
-  customer: IOrderCustomer
-  sellerId: number
-  introducerId: number | null
-  items: IOrderItem[]
-  notes: string | null
-  orderHistoryRes: IOrderHistoryRes[]
-  paymentMethod: PaymentMethod
-  commission: number
-  benefitType: string
-  seller: IOrderSeller | null
-  orderShoppingChannel: OrderShoppingChannel
-  paymentReceiptNote: string | null
-}
-
-
-export interface IOrderItem {
-  quantity: number
-  productNameSnapshot: string
-  productPriceSnapshot: number
-  lineTotal: number
-}
-export interface IOrderSeller {
-  id: number
-  username: string
-  name: string
-  email: string | null
-  phone: string
-  referralCode: string | null
-  status: string | null
-  role: string
-  lastLogin: string | null
-  isActive: boolean | null
-  createdAt: string | null
-  updatedAt: string | null
-  level: string | null
-  regionId: number | null
-  wardId: number | null
-  cityId: number | null
-  upgradedAt: string | null
-  mentorId: number | null
-  referenceBy: number | null
-  externalUserId: string | null
-  sourceCode: string | null
-  address: string | null
-  mentorLineage: string | null
-  referenceLineage: string | null
-  urlAvatar: string | null
-}
-
-export interface ICreateOrderSingleProductRequest {
-  token: string
-  productId: number
-  quantity: number
-  customerName: string
-  customerEmail: string
-  customerPhone: string
-  customerProvince: string
-  customerAddress: string
-  customerNote?: string
-  referralCode?: string
-  shoppingChannel?: OrderShoppingChannel
-  paymentMethod: PaymentMethod
-}
-
-export interface ICreateOrderLocalData
-  extends ICreateOrderSingleProductRequest {
-  product: Record<string, unknown>
-  token: string
-}
-export interface ICreateReferLinkReq {
-  productId: number
-  imageUrl?: string
-  title?: string
-  description?: string
-  expiresAt?: number
 }

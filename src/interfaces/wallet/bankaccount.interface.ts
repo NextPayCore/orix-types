@@ -1,4 +1,4 @@
-import type { BankAccountStatus } from '@/enums/wallet/bankaccount.enum.js';
+import type { BankAccountStatus } from '@/enums/wallet/bankaccount.enum';
 
 export interface IBankAccount {
   id: number;
