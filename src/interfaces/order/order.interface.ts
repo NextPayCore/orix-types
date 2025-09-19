@@ -85,6 +85,7 @@ export interface IOrderItem {
   benefitType: BenefitType; // "trực tiếp" | "trung gian"
   orderShoppingChannel: OrderShoppingChannel;
   productName: string;
+  id?: number;
 }
 
 export interface IOrderDetailItem extends IOrderItem {
