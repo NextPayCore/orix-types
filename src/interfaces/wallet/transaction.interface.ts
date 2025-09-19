@@ -1,4 +1,4 @@
-import type { TransactionStatus, TransactionType, TransactionTypeReq } from '@/enums/wallet/transaction.enum';
+import type { TransactionStatus, TransactionType, TransactionTypeReq } from '../../enums/wallet/transaction.enum';
 
 export interface ITransaction {
   id: number;

@@ -1,4 +1,4 @@
-import type { MenuItem } from '@/interfaces/menu';
+import type { MenuItem } from '../interfaces/menu';
 
 // Default menu items with badge colors
 export const defaultMenuItems: MenuItem[] = [

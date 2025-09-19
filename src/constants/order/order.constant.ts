@@ -4,8 +4,8 @@ import {
   OrderShoppingChannel,
   OrderStatus,
   TypeOrder
-} from '@/enums/order/order.enum';
-import type { IConstantListEnum } from '@/interfaces/constantEnum.interface';
+} from '../../enums/order/order.enum';
+import type { IConstantListEnum } from '../../interfaces/constantEnum.interface';
 
 interface IOrderStatusConfig<T> extends IConstantListEnum<T> {
   class: string;

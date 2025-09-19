@@ -1,5 +1,5 @@
-import { TransactionStatus, TransactionType } from '@/enums/wallet/transaction.enum';
-import type { IConstantListEnum } from '@/interfaces/constantEnum.interface';
+import { TransactionStatus, TransactionType } from '../../enums/wallet/transaction.enum';
+import type { IConstantListEnum } from '../../interfaces/constantEnum.interface';
 
 interface ITransactionStatus<T> extends IConstantListEnum<T> {
   class: string;

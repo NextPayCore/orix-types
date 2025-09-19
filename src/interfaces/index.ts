@@ -13,8 +13,8 @@ export * from './menu';
 export * from './mnpResponse.interface';
 
 // Export subdirectory interfaces
+export * from './bffweb';
 export * from './order';
 export * from './user';
-export * from './bffweb';
 export * from './wallet';
 

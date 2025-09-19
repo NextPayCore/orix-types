@@ -5,7 +5,7 @@ import type {
   OrderStatus,
   PaymentMethod,
   TypeOrder
-} from '@/enums/order/order.enum';
+} from '../../enums/order/order.enum';
 
 export interface IOrderCreateFast {
   productId: number;
