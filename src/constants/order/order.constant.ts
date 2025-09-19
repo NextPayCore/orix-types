@@ -3,6 +3,7 @@ import {
   CommissionReceiveStatus,
   OrderShoppingChannel,
   OrderStatus,
+  PaymentMethod,
   TypeOrder
 } from '../../enums/order/order.enum';
 import type { IConstantListEnum } from '../../interfaces/constantEnum.interface';
@@ -159,46 +160,19 @@ export const mapOrderTypeClass = listOrderType.reduce(
   {} as Record<TypeOrder, string>
 );
 
-// Backward compatibility - keep old exports for existing code
-export const ORDER_STATUSES = listOrderStatus;
-export const COMMISSION_STATUSES = listCommissionStatus;
-export const REFERRAL_TYPES = listReferralType;
-export const SHOPPING_CHANNEL_TYPES = listShoppingChannel;
-export const ORDER_TYPES = listOrderType;
 
-// Helper functions using reducer pattern - keep for backward compatibility
-export const getStatusClass = (status: string): string => {
-  return mapOrderStatusClass[status as OrderStatus] || 'bg-[#00A57B]';
-};
+export const listPaymentMethod = [
+  {
+    label: 'COD',
+    value: PaymentMethod.COD,
+  },
+  {
+    label: 'Chuyển khoản ngân hàng',
+    value: PaymentMethod.BANK_TRANSFER,
+  },
+]
 
-export const getStatusText = (status: string): string => {
-  return mapOrderStatusText[status as OrderStatus] || 'Đã giao hàng';
-};
-
-export const getCommissionStatusClass = (status: string): string => {
-  return mapCommissionStatusClass[status as CommissionReceiveStatus] || 'text-[#00A57B]';
-};
-
-export const getCommissionStatusText = (status: string): string => {
-  return mapCommissionStatusText[status as CommissionReceiveStatus] || 'Đã nhận';
-};
-
-export const getReferralIcon = (referralType?: string): string => {
-  return mapReferralTypeClass[referralType as BenefitType] || 'people';
-};
-
-export const getReferralText = (referralType?: string): string => {
-  return mapReferralTypeText[referralType as BenefitType] || 'CTV';
-};
-
-export const getShoppingChannelText = (channel?: string): string => {
-  return mapShoppingChannelText[channel as OrderShoppingChannel] || 'Web';
-};
-
-export const getOrderTypeClass = (orderType?: string): string => {
-  return mapOrderTypeClass[orderType as TypeOrder] || 'self-employed';
-};
-
-export const getOrderTypeText = (orderType?: string): string => {
-  return mapOrderTypeText[orderType as TypeOrder] || 'Tự doanh';
-};
+export const mapPaymentMethodToLabel: Record<PaymentMethod, string> = {
+  [PaymentMethod.COD]: 'COD',
+  [PaymentMethod.BANK_TRANSFER]: 'Chuyển khoản ngân hàng',
+}

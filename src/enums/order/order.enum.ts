@@ -38,6 +38,4 @@ export enum TypeOrder {
 export enum PaymentMethod {
   COD = 'COD', // Thanh toán khi nhận hàng
   BANK_TRANSFER = 'BANK_TRANSFER', // Chuyển khoản ngân hàng
-  WALLET = 'WALLET', // Ví nội bộ
-  CARD = 'CARD' // Thẻ (Credit/Debit)
 }
