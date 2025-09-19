@@ -19,7 +19,8 @@ function generateGlobalDeclarations() {
     // Add main category declaration
     declarations.push(`// ${category.charAt(0).toUpperCase() + category.slice(1)} modules`);
     declarations.push(`declare module '@nextpay/orix-types/${category}' {`);
-    declarations.push(`  export * from './dist/${category}/index';`);
+    declarations.push(`  const _exports: any;`);
+    declarations.push(`  export = _exports;`);
     declarations.push(`}`);
     declarations.push('');
     
@@ -42,12 +43,10 @@ function generateGlobalDeclarations() {
             const modulePath = currentPath ? 
               `@nextpay/orix-types/${category}/${currentPath.replace(/\\/g, '/')}/${item}` : 
               `@nextpay/orix-types/${category}/${item}`;
-            const distPath = currentPath ?
-              `./dist/${category}/${relativePath.replace(/\\/g, '/')}/index` :
-              `./dist/${category}/${item}/index`;
               
             declarations.push(`declare module '${modulePath}' {`);
-            declarations.push(`  export * from '${distPath}';`);
+            declarations.push(`  const _exports: any;`);
+            declarations.push(`  export = _exports;`);
             declarations.push(`}`);
             declarations.push('');
           }
@@ -61,12 +60,10 @@ function generateGlobalDeclarations() {
           const modulePath = currentPath ? 
             `@nextpay/orix-types/${category}/${currentPath.replace(/\\/g, '/')}/${fileName}` : 
             `@nextpay/orix-types/${category}/${fileName}`;
-          const distPath = currentPath ?
-            `./dist/${category}/${relativePath.replace(/\\/g, '/').replace('.ts', '')}` :
-            `./dist/${category}/${fileName}`;
             
           declarations.push(`declare module '${modulePath}' {`);
-          declarations.push(`  export * from '${distPath}';`);
+          declarations.push(`  const _exports: any;`);
+          declarations.push(`  export = _exports;`);
           declarations.push(`}`);
           declarations.push('');
         }

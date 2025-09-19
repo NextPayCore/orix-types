@@ -3,42 +3,52 @@
 
 // Constants modules
 declare module '@nextpay/orix-types/constants' {
-  export * from './dist/constants/index';
+  const _exports: any;
+  export = _exports;
 }
 
 declare module '@nextpay/orix-types/constants/config' {
-  export * from './dist/constants/config';
+  const _exports: any;
+  export = _exports;
 }
 
 declare module '@nextpay/orix-types/constants/localStorageKey' {
-  export * from './dist/constants/localStorageKey';
+  const _exports: any;
+  export = _exports;
 }
 
 declare module '@nextpay/orix-types/constants/menu' {
-  export * from './dist/constants/menu';
+  const _exports: any;
+  export = _exports;
 }
 
 declare module '@nextpay/orix-types/constants/order/order.constant' {
-  export * from './dist/constants/order/order.constant';
+  const _exports: any;
+  export = _exports;
 }
 
 declare module '@nextpay/orix-types/constants/wallet/transaction.constant' {
-  export * from './dist/constants/wallet/transaction.constant';
+  const _exports: any;
+  export = _exports;
 }
 
 // Utils modules
 declare module '@nextpay/orix-types/utils' {
-  export * from './dist/utils/index';
+  const _exports: any;
+  export = _exports;
 }
 
 declare module '@nextpay/orix-types/utils/date' {
-  export * from './dist/utils/date';
+  const _exports: any;
+  export = _exports;
 }
 
 declare module '@nextpay/orix-types/utils/format' {
-  export * from './dist/utils/format';
+  const _exports: any;
+  export = _exports;
 }
 
 declare module '@nextpay/orix-types/utils/paser' {
-  export * from './dist/utils/paser';
+  const _exports: any;
+  export = _exports;
 }
