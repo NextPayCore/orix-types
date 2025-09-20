@@ -8,8 +8,10 @@
     "skipLibCheck": true,
 
     /* Module Resolution */
-    "moduleResolution": "bundler",
-    "verbatimModuleSyntax": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
     "moduleDetection": "force",
     "baseUrl": ".",
     "paths": {
