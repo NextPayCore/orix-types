@@ -2,7 +2,7 @@ import { LessonStatus } from '@/enums';
 import { QuestionStatus, QuestionType } from '@/enums/bffweb/question.enum';
 import type { CertificateInfo } from './exam.interface';
 
-export interface Lesson {
+export interface ILesson {
   _id: string;
   productId: string;
   icon: string; // emoji hoặc URL icon
@@ -15,31 +15,31 @@ export interface Lesson {
   updatedAt: string; // ISO datetime
 }
 
-export interface LessonDisplay {
+export interface ILessonDisplay {
   lessonId: string;
   title: string;
 }
 
 // Đáp án
-export interface AnswerOption {
+export interface IAnswerOption {
   text: string;
   isCorrect: boolean;
 }
 
 // Câu hỏi
-export interface Quiz {
+export interface IQuiz {
   _id: string;
   productId: string;
   question: string;
   description: string;
   type: QuestionType;
   status: QuestionStatus;
-  answers: AnswerOption[];
+  answers: IAnswerOption[];
   createdAt: string;
   updatedAt: string;
 }
 
-export interface UserProductStateInfoRes {
+export interface IUserProductStateInfoRes {
   userId: string;
   productId: string;
   username: string;
@@ -47,4 +47,9 @@ export interface UserProductStateInfoRes {
   examPassed: boolean;
   trainingPassed: boolean;
   certificateInfo?: CertificateInfo; // có thể undefined nếu chưa thi
+}
+
+export interface ILessonDisplay {
+  lessonId: string
+  title: string
 }

@@ -39,13 +39,29 @@
       "import": "./dist/interfaces/bffweb/lesson.interface.js",
       "types": "./dist/interfaces/bffweb/lesson.interface.d.ts"
     },
+    "./interfaces/bffweb/product.interface": {
+      "import": "./dist/interfaces/bffweb/product.interface.js",
+      "types": "./dist/interfaces/bffweb/product.interface.d.ts"
+    },
+    "./interfaces/bffweb/question.interface": {
+      "import": "./dist/interfaces/bffweb/question.interface.js",
+      "types": "./dist/interfaces/bffweb/question.interface.d.ts"
+    },
     "./interfaces/bffweb/response.interface": {
       "import": "./dist/interfaces/bffweb/response.interface.js",
       "types": "./dist/interfaces/bffweb/response.interface.d.ts"
     },
+    "./interfaces/bffweb/setting.interface": {
+      "import": "./dist/interfaces/bffweb/setting.interface.js",
+      "types": "./dist/interfaces/bffweb/setting.interface.d.ts"
+    },
     "./interfaces/bffweb/short-link.interface": {
       "import": "./dist/interfaces/bffweb/short-link.interface.js",
       "types": "./dist/interfaces/bffweb/short-link.interface.d.ts"
+    },
+    "./interfaces/bffweb/user.interface": {
+      "import": "./dist/interfaces/bffweb/user.interface.js",
+      "types": "./dist/interfaces/bffweb/user.interface.d.ts"
     },
     "./interfaces/constantEnum.interface": {
       "import": "./dist/interfaces/constantEnum.interface.js",
