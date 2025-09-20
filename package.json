@@ -1,6 +1,6 @@
 {
   "name": "@nextpay/orix-types",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Shared TypeScript types, interfaces, enums, and constants for Orix projects",
   "type": "module",
   "main": "./dist/index.js",
@@ -11,12 +11,6 @@
     "*": {
       "*": [
         "./dist/*"
-      ],
-      "constants/*": [
-        "./dist/constants/*"
-      ],
-      "utils/*": [
-        "./dist/utils/*"
       ]
     }
   },
