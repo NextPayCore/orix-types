@@ -1,4 +1,5 @@
-import type { LessonStatus, QuestionStatus, QuestionType } from '../../enums/bffweb/lesson.enum';
+import { LessonStatus } from '@/enums';
+import { QuestionStatus, QuestionType } from '@/enums/bffweb/question.enum';
 import type { CertificateInfo } from './exam.interface';
 
 export interface Lesson {

@@ -1,0 +1,12 @@
+export enum QuestionStatus {
+  ACTIVE = 'ACTIVE',
+  INACTIVE = 'INACTIVE',
+  DRAFT = 'DRAFT',
+  DELETED = 'DELETED',
+}
+export enum QuestionType {
+  SINGLE_CHOICE = 'SINGLE_CHOICE',
+  MULTIPLE_CHOICE = 'MULTIPLE_CHOICE',
+  TEXT_INPUT = 'TEXT_INPUT',
+
+}

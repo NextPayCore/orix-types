@@ -119,6 +119,14 @@
       "import": "./dist/enums/bffweb/lesson.enum.js",
       "types": "./dist/enums/bffweb/lesson.enum.d.ts"
     },
+    "./enums/bffweb/question.enum": {
+      "import": "./dist/enums/bffweb/question.enum.js",
+      "types": "./dist/enums/bffweb/question.enum.d.ts"
+    },
+    "./enums/bffweb/user.enum": {
+      "import": "./dist/enums/bffweb/user.enum.js",
+      "types": "./dist/enums/bffweb/user.enum.d.ts"
+    },
     "./enums/layout": {
       "import": "./dist/enums/layout.js",
       "types": "./dist/enums/layout.d.ts"
