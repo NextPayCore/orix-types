@@ -28,7 +28,6 @@ function scanDirectory(baseDir = 'src') {
           
           exports[exportPath] = {
             "import": `./dist/${category}/${relativePath.replace(/\\/g, '/')}/index.js`,
-            "require": `./dist/${category}/${relativePath.replace(/\\/g, '/')}/index.js`,
             "types": `./dist/${category}/${relativePath.replace(/\\/g, '/')}/index.d.ts`
           };
         }
@@ -45,7 +44,6 @@ function scanDirectory(baseDir = 'src') {
         
         exports[exportPath] = {
           "import": `./dist/${category}/${relativePath.replace(/\\/g, '/').replace('.ts', '.js')}`,
-          "require": `./dist/${category}/${relativePath.replace(/\\/g, '/').replace('.ts', '.js')}`,
           "types": `./dist/${category}/${relativePath.replace(/\\/g, '/').replace('.ts', '.d.ts')}`
         };
       }
@@ -61,7 +59,6 @@ function scanDirectory(baseDir = 'src') {
     // Add main category export
     exports[`./${category}`] = {
       "import": `./dist/${category}/index.js`,
-      "require": `./dist/${category}/index.js`,
       "types": `./dist/${category}/index.d.ts`
     };
     
@@ -83,7 +80,6 @@ const generatedExports = {
   // Root export
   ".": {
     "import": "./dist/index.js",
-    "require": "./dist/index.js",
     "types": "./dist/index.d.ts"
   },
   
