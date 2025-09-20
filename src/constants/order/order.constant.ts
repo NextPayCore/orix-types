@@ -7,7 +7,6 @@ import {
   TypeOrder
 } from '../../enums/order/order.enum.js';
 import type { IConstantListEnum } from '../../interfaces/constantEnum.interface.js';
-
 interface IOrderStatusConfig<T> extends IConstantListEnum<T> {
   class: string;
 }
