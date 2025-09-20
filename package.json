@@ -1,6 +1,6 @@
 {
   "name": "@nextpay/orix-types",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Shared TypeScript types, interfaces, enums, and constants for Orix projects",
   "type": "module",
   "main": "./dist/index.js",
@@ -265,7 +265,7 @@
     "release:patch": "pnpm version patch && git push && git push --tags",
     "release:minor": "pnpm version minor && git push && git push --tags",
     "release:major": "pnpm version major && git push && git push --tags",
-    "version": "pnpm run build-all && git add dist/",
+    "version": "pnpm run build-all",
     "publish:git": "pnpm run build-all && git add . && git commit -m \"update types\" && git push origin main"
   },
   "keywords": [
