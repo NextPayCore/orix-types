@@ -6,10 +6,17 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "module": "./dist/index.js",
+  "browser": "./dist/index.js",
   "typesVersions": {
     "*": {
       "*": [
         "./dist/*"
+      ],
+      "constants/*": [
+        "./dist/constants/*"
+      ],
+      "utils/*": [
+        "./dist/utils/*"
       ]
     }
   },
