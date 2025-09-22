@@ -39,3 +39,8 @@ export enum PaymentMethod {
   COD = 'COD', // Thanh toán khi nhận hàng
   BANK_TRANSFER = 'BANK_TRANSFER', // Chuyển khoản ngân hàng
 }
+
+export enum PaymentStatus {
+  UNPAID = 'UNPAID', // Chưa thanh toán
+  PAID = 'PAID' // Đã thanh toán
+}

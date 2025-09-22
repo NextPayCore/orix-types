@@ -4,6 +4,7 @@ import type {
   OrderShoppingChannel,
   OrderStatus,
   PaymentMethod,
+  PaymentStatus,
   TypeOrder
 } from '../../enums/order/order.enum';
 
@@ -100,6 +101,7 @@ export interface IOrderDetailItem extends IOrderItem {
   commission: number; // hoa hồng
   seller: IUserResponse; // thông tin seller cộng tác viên hoặc trung gian
   paymentReceiptNote?: string; // ghi chú thanh toán
+  paymentStatus: PaymentStatus; // trạng thái thanh toán
 }
 
 export interface IOrderCustomer {
